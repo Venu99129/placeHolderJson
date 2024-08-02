@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 16.11 s <<< FAILURE! -- in com.automation.runner.TestRunner
+Create Auth Token.Verify user can create token #2 -- Time elapsed: 1.449 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Bad credentials]> but was:<[ ]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.automation.steps.ResponseSteps.verifyResponseMessageIs(ResponseSteps.java:58)
+	at ✽.verify response message is "Bad credentials"(file:///C:/Users/280760/Documents/workspace-spring-tool-suite-4-4.22.1.RELEASE/placeHolderJson/src/test/resources/features/create_token.feature:9)
+
+test on json post call.create order post call -- Time elapsed: 2.029 s <<< FAILURE!
+java.lang.AssertionError: expected:<201> but was:<404>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at com.automation.steps.ResponseSteps.verify_status_code_as(ResponseSteps.java:22)
+	at ✽.verify status code as 201(file:///C:/Users/280760/Documents/workspace-spring-tool-suite-4-4.22.1.RELEASE/placeHolderJson/src/test/resources/features/jsonexcercise.feature:13)
+
